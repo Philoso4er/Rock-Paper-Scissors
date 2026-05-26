@@ -1,5 +1,5 @@
 {
-  "name": "Emoji Battle: Rock Paper Scissors",
-  "description": "A chaotic simulation where emojis hunt their prey and transform their rivals. Customize your battleground and watch the evolution of the ultimate winner.",
+  "name": "RPS Battle Simulation",
+  "description": "A real-time Rock Paper Scissors battle simulator. Pick your alliance, watch hundreds of icons hunt each other down, and share the result.",
   "requestFramePermissions": []
 }
