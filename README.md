@@ -1,20 +1,34 @@
 <div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
+  <h1>⚔️ RPS Battle Simulation</h1>
+  <p>A real-time Rock · Paper · Scissors battle simulator where every icon is an independent creature hunting its prey.</p>
 </div>
 
-# Run and deploy your AI Studio app
+## What is this?
 
-This contains everything you need to run your app locally.
+Watch teams of rocks, papers and scissors roam a battlefield, each one independently seeking out its natural enemy. When they collide, the loser converts — and the tide can turn at any moment.
 
-View your app in AI Studio: https://ai.studio/apps/4ff09acb-b158-46a8-a1d4-44a336564327
+Pick your alliance before the match. Watch your team fight. Share the result.
+
+## Features
+
+- 🎮 Live simulation with individual entity AI
+- 😤 Mood expressions that react to the match state
+- 📊 Real-time momentum bar and HUD
+- ⚡ Screen effects on big moments
+- 🏆 Shareable result cards with match commentary
+- 🎨 Custom backgrounds + battle pace presets
 
 ## Run Locally
 
-**Prerequisites:**  Node.js
+**Prerequisites:** Node.js 18+
 
+```bash
+npm install
+npm run dev
+```
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+App runs at `http://localhost:3000`
+
+## Stack
+
+React · TypeScript · Vite · Tailwind CSS · Framer Motion · HTML Canvas
