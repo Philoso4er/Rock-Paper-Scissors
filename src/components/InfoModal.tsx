@@ -62,7 +62,7 @@ const InfoModal: React.FC = () => {
         onMouseEnter={e => (e.currentTarget.style.color = '#fff')}
         onMouseLeave={e => (e.currentTarget.style.color = 'rgba(255,255,255,0.7)')}
       >
-        <Info size={15} /> Info; 
+        <Info size={15} /> Info 
 
       </button>
 
