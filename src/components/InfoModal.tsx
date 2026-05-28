@@ -62,7 +62,8 @@ const InfoModal: React.FC = () => {
         onMouseEnter={e => (e.currentTarget.style.color = '#fff')}
         onMouseLeave={e => (e.currentTarget.style.color = 'rgba(255,255,255,0.7)')}
       >
-        <Info size={15} /> HOW TO PLAY
+        <Info size={15} /> &#x1F6C8; 
+
       </button>
 
       <AnimatePresence>
