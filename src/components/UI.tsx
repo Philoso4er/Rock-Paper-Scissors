@@ -64,13 +64,13 @@ const UI: React.FC<UIProps> = ({
             <div style={{
               background: 'rgba(0,0,0,0.84)', backdropFilter: 'blur(24px)',
               border: '1px solid rgba(255,255,255,0.1)', borderRadius: 20,
-              padding: '28px 28px 32px', width: '100%', maxWidth: 600,
+              padding: '32px 28px', width: '100%', maxWidth: 600,
               display: 'flex', flexDirection: 'column', gap: 22,
             }}>
 
-              {/* ── Title row with info icon ── */}
-              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'relative' }}>
-                <div style={{ textAlign: 'center' }}>
+              {/* Title row with info button */}
+              <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between' }}>
+                <div style={{ flex: 1, textAlign: 'center' }}>
                   <div style={{
                     fontFamily: 'Georgia, serif', fontSize: 26, fontWeight: 700,
                     color: '#fff', letterSpacing: '0.06em', marginBottom: 4,
@@ -84,9 +84,8 @@ const UI: React.FC<UIProps> = ({
                     Battle Simulation
                   </div>
                 </div>
-
-                {/* Info icon — top-right of the title block */}
-                <div style={{ position: 'absolute', right: 0, top: '50%', transform: 'translateY(-50%)' }}>
+                {/* Info button — top right of the panel */}
+                <div style={{ flexShrink: 0, marginLeft: 12, marginTop: 2 }}>
                   <InfoModal />
                 </div>
               </div>
@@ -118,9 +117,9 @@ const UI: React.FC<UIProps> = ({
                     Even
                   </button>
                   <button onClick={() => onUpdateSettings({
-                    rockCount:     Math.floor(Math.random() * 40) + 10,
-                    paperCount:    Math.floor(Math.random() * 40) + 10,
-                    scissorsCount: Math.floor(Math.random() * 40) + 10,
+                    rockCount: Math.floor(Math.random()*40)+10,
+                    paperCount: Math.floor(Math.random()*40)+10,
+                    scissorsCount: Math.floor(Math.random()*40)+10,
                   })} style={{ fontSize: 10, padding: '3px 10px', background: 'rgba(255,255,255,0.07)', border: '1px solid rgba(255,255,255,0.12)', borderRadius: 6, color: 'rgba(255,255,255,0.6)', cursor: 'pointer' }}>
                     Random
                   </button>
@@ -213,7 +212,7 @@ const UI: React.FC<UIProps> = ({
                 </div>
               </div>
 
-              {/* Start button */}
+              {/* Start */}
               <motion.button
                 whileTap={{ scale: 0.97 }}
                 onClick={onStart}
@@ -230,7 +229,6 @@ const UI: React.FC<UIProps> = ({
                 <Play size={18} fill="#fff"/>
                 {currentBet > 0 ? `START · ${currentBet} 🪙 BET` : 'START BATTLE'}
               </motion.button>
-
             </div>
           </motion.div>
         )}
